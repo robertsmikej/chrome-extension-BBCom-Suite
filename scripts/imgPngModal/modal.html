@@ -1,0 +1,139 @@
+<style>
+    .Product__img--wrapper {
+        position: relative;
+    }
+    .big-image-lightbox {
+        display: none !important;
+    }
+    .bb-lock-scroll {
+        overflow: scroll !important;
+    }
+    /* .imgOverrclasse {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 500;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    } */
+
+    .extensionModalOverlay {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 500;
+        top: 0;
+        left: 0;
+        opacity: .6;
+        background-color: #000;
+        display: none;
+    }
+
+    .extensionModal {
+        width: 90%;
+        max-width: 800px;
+        margin: 0 auto 0 auto;
+        align-self: center;
+        background-color: #FFF;
+        display: none;
+        position: fixed;
+        z-index: 505;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .extensionModal h2 {
+        text-align: center;
+        font: 400 20px/21px "ProximaNovaBlk", Arial, sans-serif;
+        margin: 0 auto 8px;
+        font-weight: 800;
+    }
+
+    .extensionModal h3 {
+        text-align: center;
+        font: 400 19px/21px "ProximaNova", Arial, sans-serif;
+        margin: 0 auto 5px;
+    }
+
+    .extensionModal p {
+        text-align: center;
+        font: 300 15px/17px "ProximaNova", Arial, sans-serif;
+        margin: 0 auto 5px;
+    }
+
+    .extensionChoose,
+    .extensionImageView {
+        width: 100%;
+        height: 100%;
+        padding: 34px 0;
+    }
+
+    .extensionChoose .imageRetDiv {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .extensionChoose .imgRetDivImgDiv {
+        width: auto;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        margin: 20px 0 0;
+    }
+
+    .extensionChoose a {
+        width: 100%;
+    }
+
+    .extensionChoose img {
+        width: 70px;
+        margin: 10px auto 0 auto;
+        display: block;
+    }
+
+    .extensionImageView img {
+        width: auto;
+        margin: 10px auto 0 auto;
+        display: block;
+    }
+
+</style>
+<div class="extensionModalOverlay"></div>
+<div class="extensionModal">
+    <div class='extensionChoose'>
+        <h2>Product Image Retrieval</h2>
+        <h3 class='extensionGrouping'></h3>
+        <h3 class='extensionSKU'>SKU: <span></span></h3>
+        <div class='imageRetDiv'>
+           <div class='imgRetDivImgDiv'>
+                <p>JPG</p>
+                <p><b>70px Wide</b></p>
+                <p>White Background</p><a><img class="extensionImg0" src=""/></a>
+            </div>
+            <div class='imgRetDivImgDiv'>
+                <p>JPG</p>
+                <p><b>130px Wide</b></p>
+                <p>White Background</p><a><img class="extensionImg1" src=""/></a>
+            </div>
+            <div class='imgRetDivImgDiv'>
+                <p>JPG</p>
+                <p><b>450px Wide</b></p>
+                <p>White Background</p><a><img class="extensionImg2" src=""/></a>
+            </div>
+            <div class='imgRetDivImgDiv'>
+                <p>PNG</p>
+                <p><b>1000px Wide</b></p>
+                <p>Transparent Background</p><a><img class="extensionImg3" src=""/></a>
+            </div>
+        </div>
+    </div>
+    <div class='extensionImageView'><img/></div>
+</div>

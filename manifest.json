@@ -1,0 +1,37 @@
+{
+	"manifest_version": 2,
+	"name": "Bodybuilding.com Tool Suite - Mixtape Vol. 2",
+	"author": "Mike Roberts - Bodybuilding.com",
+	"description": "Various Tools for Employees of Bodybuilding.com",
+	"version": "2.2.02",
+	"background": {
+        "scripts": [
+            "/scripts/background.js"
+        ],
+        "persistent": false
+	},
+	"content_scripts": [{
+		"matches": ["file:///*", "*://jira/*", "*://preview-store.body.local/*", "*://*.bodybuilding.com/*", "*://publishing-store/*", "https://confluence/*"],
+		"js": ["scripts/jquery.min.js", "scripts/addCSS/addCSS.js", "scripts/showSKUs/showSKUs.js", "scripts/previewFixer/fixer.js", "scripts/promoData/promoData.js", "scripts/showSKUs/campaignSKUs.js"],
+        "run_at": "document_end"
+	}],
+	"browser_action": {
+		"default_icon": "imgs/bbcomlogo128clear.png",
+		"default_title": "Bodybuilding.com Extension"
+	},
+	"icons": {
+		"128":"imgs/bbcomIcon128by128.png"
+	},
+	"permissions": [
+		"activeTab",
+		"tabs",
+		"https://ajax.googleapis.com/",
+		"contextMenus",
+		"storage",
+		"notifications",
+		"cookies",
+		"<all_urls>",
+		"*://*/*"
+	],
+	"web_accessible_resources": ["scripts/imgPngModal/modal.html", "scripts/previewSwitch/previewSwitch.js", "scripts/previewFixer/fixer.js", "scripts/previewFixer/fixer-css.html", "scripts/addCSS/bbExtension-css.html", "scripts/showSKUs/getSKUs.js", "scripts/photoUploaderBCC/photoUploaderBCC-css.html", "imgs/expand.png", "scripts/showSKUs/getSKUsPreview.js"]
+}

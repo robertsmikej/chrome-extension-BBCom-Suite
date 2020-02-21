@@ -1,0 +1,103 @@
+<style>
+/*REMOVING UNNECCESSARY THINGS FROM PREVIEW*/
+#fb-prod-holder, .padded-product-content, #feedback, #breadcrumbs, .store-bs-container-fluid {
+    display: none !important;
+}
+/*CHANGING BACKGROUNDS OF MAIN DIV*/
+body, .Wr__content, #mainConProd #vendor-content {
+    background: #FFF !important;
+    box-shadow: none !important;
+    color: #000;
+}
+/*MAKING NEW WIDTHS FOR CONTAINERS*/
+#mainConProd, #leftContentProd, #left-content-prod {
+    width: 100% !important;
+    background: #FFF !important;
+    border: none !important;
+}
+/*CHANGING VENDOR BLOCK TO MATCH LIVE SITE - 750PX*/
+#left-content-prod, .VendorBlock, .product-content {
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 750px !important;
+}
+/*RANDOM STUFF TO BRING PAGE UP TO DATE*/
+.VendorBlock {
+    box-sizing: border-box !important;
+}
+#left-content-prod {
+    margin: 30px 30px 0 0 !important;
+}
+.product-detail__subtab {
+    border: 1px solid #E1E1E1 !important;
+}
+.product-award-cabinet {
+    display: none !important;
+}
+div#bgCon {
+    min-width: 1100px !important;
+}
+.Wr__product-page .Wr__content {
+    padding-top: 40px !important;
+}
+/*PRODUCT CONTENT BLOCK*/
+div.product-content {
+    background-color: #FFF !important;
+    color: #000 !important;
+}
+.product-overview {
+    margin-bottom: 10px;
+}
+.preview__modal__outer {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: .5;
+    display: none;
+    z-index: 1000;
+}
+.preview__modal__inner {
+    width: auto;
+    height: auto;
+    padding: 60px;
+    background: #FFF;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+}
+.flava-flav .order-button {
+    overflow: hidden;
+}
+.flava-flav .order-button .bb-flat-btn {
+    text-align: center;
+    padding: 5px !important;
+    height: auto;
+    line-height: 9px;
+}
+body .flavor-table .order-button {
+    width: auto;
+}
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:1200px) {
+    .Wr__product-page .Wr__content, div#bgCon {
+        min-width: 0 !important;
+        width: 100% !important;
+    }
+}
+/* ----------------------------  MEDIA QUERY ------------------------------ */
+@media screen and (max-width:800px) {
+    .product-overview, #PromoRotator {
+        display: none !important;
+    }
+    .Wr__product-page .Wr__content {
+        padding-top: 0px !important;
+    }
+}
+</style>
